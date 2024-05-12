@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #B5B5B5;
+    color: black;
+    padding: 2rem;
+    width: 100%; 
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hidden {
+    padding: 4rem;
+}
+
+
+#photos_contact {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+#twarz {
+    width: 15rem; 
+    height: 15rem;
+    margin-bottom: 1rem;
+    display: inline-block; 
+}
+
+#tekst-obok-zdjecia {
+    font-weight: bold;
+}
+#about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+#pictures_hobbies {
+    width: 13rem;
+    
+}
+
+#photos_projects {
+    width: 20rem;
+    height: 20rem;
+    padding-bottom: 3rem;
+}
+
+#projects {
+    background-color: #B5B5B5;
+}
+
+#contact {
+    background-color: #B5B5B5;
+}
+
+a:hover {
+    font-size: 110%;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+

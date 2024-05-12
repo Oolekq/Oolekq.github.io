@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <nav>
+                <ul>
+                    
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <section id="about" class="hidden">
+        <div class="container">
+            <h2>ABOUT ME</h2>
+            <img id="twarz" src="zdjecie.jpg" alt="Zdjęcie profilowe">
+            <div>
+                <h1 id="tekst-obok-zdjecia">Aleksander Głuszczak, fullstack developer</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="hidden">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="project">
+                <h3>Spotify login</h3>
+                <img id="photos_projects" src="spotify.png"> <br>
+                <h3>Instagram login</h3>
+                <img id="photos_projects" src="instagram.png">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="skills" class="hidden">
+        <div class="container">
+            <h2>HOBBIES</h2>
+            <p>
+
+                I have always been interested in football since I was
+                 a little child. When I was 7 years old I started playing
+                  in the local team. I had a lot of fun doing it and to this
+                   day football is my favorite sport. In the 8th grade of primary
+                    school, I became interested in programming and decided that
+                     I wanted to pursue this field. That's why I chose
+                      programming.</p>
+
+                      <img id="pictures_hobbies" src="computer.png">
+                      <img id="pictures_hobbies" src="ball.png">
+                      <img id="pictures_hobbies" src="computer2.png">
+        </div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <ul>
+                <p><img id="photos_contact" src="github.jpg" alt=""> Oolekq</p>
+                <p><img id="photos_contact" src="ig_login.png" alt="">o.l.e.k.8759</p>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js">
+const observer = new IntersectionObserver( (entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add("show")
+        }
+        else {
+            entry.target.classList.remove("show")
+        }
+    })
+} )
+
+const hiddenElements = document.querySelectorAll(".hidden")
+
+hiddenElements.forEach( (el) => observer.observe(el) )
+
+    </script>
+</body>
+</html>
